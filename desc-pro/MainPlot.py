@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from PyQt5 import QtWidgets, QtGui
 import ntpath
-from dialogs.PlotSettingsDialog import PlotSettingsDialog
+from .dialogs.PlotSettingsDialog import PlotSettingsDialog
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.backends.backend_qt5agg import NavigationToolbar2QT as NavigationToolbar

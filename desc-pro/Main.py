@@ -4,8 +4,8 @@
 import sys
 from PyQt5 import QtWidgets, QtGui, QtCore
 
-from MainGui import MainGui
-import Required_resources
+from .MainGui import MainGui
+from . import Required_resources
 
 if __name__ == "__main__":
 

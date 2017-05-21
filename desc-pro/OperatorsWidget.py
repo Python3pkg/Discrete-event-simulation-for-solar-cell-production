@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 from PyQt5 import QtCore, QtWidgets, QtGui
 from copy import deepcopy
-from dialogs.OperatorSettingsDialog import OperatorSettingsDialog
-from dialogs.ConnectionSettingsDialog import ConnectionSettingsDialog
+from .dialogs.OperatorSettingsDialog import OperatorSettingsDialog
+from .dialogs.ConnectionSettingsDialog import ConnectionSettingsDialog
 
 class OperatorsWidget(QtCore.QObject):
     def __init__(self, parent=None):

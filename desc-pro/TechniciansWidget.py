@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from PyQt5 import QtCore, QtWidgets, QtGui
-from dialogs.TechnicianSettingsDialog import TechnicianSettingsDialog
+from .dialogs.TechnicianSettingsDialog import TechnicianSettingsDialog
 from copy import deepcopy
 
 class TechniciansWidget(QtCore.QObject):

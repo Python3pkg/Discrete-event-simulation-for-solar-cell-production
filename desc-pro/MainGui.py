@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 from PyQt5 import QtCore, QtWidgets, QtGui
 import ntpath
-from dialogs.HelpDialog import HelpDialog
-from ToolsWidget import ToolsWidget
-from CassetteloopsWidget import CassetteloopsWidget
-from OperatorsWidget import OperatorsWidget
-from TechniciansWidget import TechniciansWidget
-from RunSimulationThread import RunSimulationThread
-from MainPlot import MultiPlot
+from .dialogs.HelpDialog import HelpDialog
+from .ToolsWidget import ToolsWidget
+from .CassetteloopsWidget import CassetteloopsWidget
+from .OperatorsWidget import OperatorsWidget
+from .TechniciansWidget import TechniciansWidget
+from .RunSimulationThread import RunSimulationThread
+from .MainPlot import MultiPlot
 import pickle, csv
 from copy import deepcopy
 import pandas as pd
@@ -473,7 +473,7 @@ class MainGui(QtWidgets.QMainWindow):
         text = self.edit.toPlainText()
         rows = text.count('\n')
 
-        df0 = pd.DataFrame(columns=headerlabels,index=range(rows))
+        df0 = pd.DataFrame(columns=headerlabels,index=list(range(rows)))
 
         text = text.splitlines()        
         for i in range(rows):
@@ -487,7 +487,7 @@ class MainGui(QtWidgets.QMainWindow):
         for i in range(5,99):
             headerlabels.append("Process " + str(i-5))
     
-        df1 = pd.DataFrame(columns=headerlabels,index=range(rows)) 
+        df1 = pd.DataFrame(columns=headerlabels,index=list(range(rows))) 
     
         for i in range(rows):
             for j in range(columns):

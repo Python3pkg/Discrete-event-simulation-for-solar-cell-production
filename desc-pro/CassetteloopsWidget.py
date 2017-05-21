@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from PyQt5 import QtCore, QtWidgets, QtGui
-from dialogs.CassetteLoopSettingsDialog import CassetteLoopSettingsDialog
+from .dialogs.CassetteLoopSettingsDialog import CassetteLoopSettingsDialog
 
 class CassetteloopsWidget(QtCore.QObject):
     def __init__(self, parent=None):

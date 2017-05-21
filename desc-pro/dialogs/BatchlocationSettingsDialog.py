@@ -128,7 +128,7 @@ class BatchlocationSettingsDialog(QtWidgets.QDialog):
                                "automation" : "<b>Automation settings</b>",
                                "downtime" : "<b>Downtime settings</b>"}
         for j in setting_types:
-            if not (j in curr_params.values()):
+            if not (j in list(curr_params.values())):
                 continue
             
             vbox = QtWidgets.QVBoxLayout()

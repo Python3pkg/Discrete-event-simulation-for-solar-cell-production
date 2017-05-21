@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 from PyQt5 import QtCore, QtWidgets, QtGui
-from dialogs.AddBatchlocationDialog import AddBatchlocationDialog
-from dialogs.BatchlocationSettingsDialog import BatchlocationSettingsDialog
-from dialogs.LocationgroupSettingsDialog import LocationgroupSettingsDialog
-from dialogs.LineDiagramDialog import LineDiagramDialog
+from .dialogs.AddBatchlocationDialog import AddBatchlocationDialog
+from .dialogs.BatchlocationSettingsDialog import BatchlocationSettingsDialog
+from .dialogs.LocationgroupSettingsDialog import LocationgroupSettingsDialog
+from .dialogs.LineDiagramDialog import LineDiagramDialog
 
 class ToolsWidget(QtCore.QObject):
     def __init__(self, parent=None):
